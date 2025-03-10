@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Juego de Memoria</h1>
-    <div id="game-board" class="game-board">
-        <!-- Aquí se generarán las cartas -->
+    <div class="column1">
+        <h1>Juego de Memoria</h1>
+        <div id="game-board" class="game-board">
+            <!-- Aquí se generarán las cartas -->
+        </div>
+        <button id="reset-btn">Reiniciar Juego</button>
+        <button id="reset-btn">Cargar datos anteriores</button>
     </div>
-    <button id="reset-btn">Reiniciar Juego</button>
+    <div class="infoJuego">    
+        <p id="puntaje"></p>
+        <p id="mensaje"></p>
+
+    </div>
+
     
     <script src="script.js"></script>
 </body>

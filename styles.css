@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh;
     margin: 0;
     background-color: #40f20a;
@@ -12,6 +12,7 @@ body {
 h1 {
     color: #333;
 }
+
 
 .game-board {
     display: grid;
@@ -53,4 +54,9 @@ h1 {
 
 #reset-btn:hover {
     background-color: #0056b3;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
 }
