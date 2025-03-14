@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Juego de Memoria</h1>
-    <div id="game-board" class="game-board">
-        <!-- Aquí se generarán las cartas -->
+    <div id="menu" class="menu">
+        <h1>Juego de Memoria</h1>
+        <label for="difficulty">Selecciona la dificultad:</label>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button id="start-btn">Iniciar Juego</button>
     </div>
-    <button id="reset-btn">Reiniciar Juego</button>
+    
+    <div id="game-container" class="hidden">
+        <h1>Juego de Memoria</h1>
+        <div id="game-board" class="game-board"></div>
+        <button id="pause-btn">Pausar</button>
+        <button id="reset-btn">Reiniciar Juego</button>
+    </div>
     
     <script src="script.js"></script>
 </body>
