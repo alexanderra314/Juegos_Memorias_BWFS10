@@ -8,11 +8,16 @@
 </head>
 <body>
     <h1>Juego de Memoria</h1>
+    <!-- <p>Movimientos: <span id="contadorMovimientos"></span></p>
+      -->
+    <label for="">Movimientos</label>
+    <input type="text" id="contadorMovimientos" disabled>
     <div id="game-board" class="game-board">
         <!-- Aquí se generarán las cartas -->
     </div>
+    <p id="puntaje"></p>
+    <p id="mensaje"></p>
     <button id="reset-btn">Reiniciar Juego</button>
-    
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
