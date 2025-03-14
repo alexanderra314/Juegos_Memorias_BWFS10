@@ -96,7 +96,7 @@ function guardarDatos(){
 function leerDatos(){
     const datosGuardados = localStorage.getItem("puntaje")
     if (datosGuardados == !null){
-        puntajeJuego = parseInt(datosGuardados)
+        puntajeJuego = parseInt(datosGuardadosgit)
     }
     else{
         console.log("No hay datos anteriores guardados")
