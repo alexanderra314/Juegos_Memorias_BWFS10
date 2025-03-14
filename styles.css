@@ -6,11 +6,13 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #40f20a;
+    
+     background-image: url('imagen.jpg');
 }
 
 h1 {
-    color: #333;
+    color: rgb(0, 0, 0);
+    
 }
 
 .game-board {
@@ -23,7 +25,7 @@ h1 {
 .card {
     width: 100px;
     height: 100px;
-    background-color: #007bff;
+    background-color: #df2929;
     color: white;
     font-size: 2em;
     display: flex;
@@ -32,19 +34,22 @@ h1 {
     cursor: pointer;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    z-index: 10;
+    transform: rotateY 180deg;
+    
 }
-
 .card.flipped {
-    background-color: #fff;
-    color: #333;
+    background-color: #ffffff; 
+   
     transform: rotateY(180deg);
     cursor: default;
+   
 }
 
 #reset-btn {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #cf0606c7;
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -52,5 +57,12 @@ h1 {
 }
 
 #reset-btn:hover {
-    background-color: #0056b3;
+    background-color: #000000;
+    color: #ffffff;
 }
+
+
+
+
+
+
